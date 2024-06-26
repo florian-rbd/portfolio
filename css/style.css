@@ -43,19 +43,21 @@ body {
     background-color: var(--primary-background-color);
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
 }
 
-/* Navigator */
+/* Naviguator */
 
 .naviguator {
+    position: fixed;
     display: flex;
-    max-width: min(100%, 1200px);
+    width: 100vw;
     height: 70px;
-    background-color: var(--secondary-background-color);
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     justify-content: space-between;
-    margin: 0 auto;
-    z-index: 10;    
+    padding: 0 40px;
+    z-index: 1;
 }
 
 /* Naviguator Logo */
@@ -63,7 +65,6 @@ body {
 .naviguator-logo {
     width: 200px;
     line-height: 70px;
-    margin-right: 20px;
 }
 
 .naviguator-logo a {
@@ -160,7 +161,7 @@ body {
 }
 
 .naviguator-burger.active span:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Container */
@@ -169,6 +170,7 @@ body {
     position: relative;
     max-width: min(100%, 1200px);
     margin: 0 auto;
+    padding-top: 70px;
 }
 
 /* Header */
@@ -297,7 +299,7 @@ body {
 }
 
 .section .section-container h3 {
-    font-size: 28px;
+    font-size: 22px;
     color: var(--second-color);
     letter-spacing: 2px;
     text-align: center;
@@ -310,12 +312,12 @@ body {
 }
 
 .section .section-container .section-list .section-list-item {
-    margin: 0.5em 0;
-    font-size: 24px;
+    margin: 0.5em 0.5em;
+    font-size: 16px;
     color: white;
     letter-spacing: 2px;
     background-color: var(--second-color);
-    padding: 10px 20px;
+    padding: 10px 5px;
     border-radius: 5px;
     user-select: none;
 }
@@ -436,10 +438,10 @@ body {
     .naviguator-list {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 70px;
         right: 0;
-        height: 100vh;
+        width: 100vw;
         background-color: var(--secondary-background-color);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         padding: 10px;

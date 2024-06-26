@@ -49,15 +49,19 @@ body {
 
 .naviguator {
     position: fixed;
-    display: flex;
     width: 100vw;
     height: 70px;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
-    justify-content: space-between;
-    padding: 0 40px;
     z-index: 1;
+}
+
+.naviguator-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: min(1200px, 100%);
+    margin: 0 auto;
 }
 
 /* Naviguator Logo */
